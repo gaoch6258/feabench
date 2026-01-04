@@ -13,7 +13,7 @@
 # limitations under the License.
 
 from absl.testing import absltest
-from engmod.common.eval import utils
+from common.eval import utils
 
 
 class UtilsTest(absltest.TestCase):

@@ -22,10 +22,10 @@ from absl import logging
 import ml_collections as mlc
 import yaml
 
-from engmod.common import agent_configs
-from engmod.common import corrector_main_agents
-from engmod.common import file_utils
-from engmod.common import simple_agents
+import agent_configs
+import corrector_main_agents
+import file_utils
+import simple_agents
 
 AGENTS = {
     'SingleStepAgent': simple_agents.SingleStepAgent,

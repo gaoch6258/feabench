@@ -16,7 +16,7 @@
 import dataclasses
 
 from absl.testing import absltest
-from engmod.common.eval import evaluate_bench
+from common.eval import evaluate_bench
 import numpy as np
 
 

@@ -20,12 +20,12 @@ import os
 import time
 from typing import Any, List
 import numpy as np
-from engmod.common import agent_configs
-from engmod.common import file_utils
-from engmod.common import llm_client_builder
-from engmod.common import prompt_generation
-from engmod.common.eval import parsing_lm_utils
-from engmod.common.eval import utils
+import agent_configs
+import file_utils
+import llm_client_builder
+import prompt_generation
+from eval import parsing_lm_utils
+from eval import utils
 
 
 class SingleStepAgent(agent_configs.GenericAgent):

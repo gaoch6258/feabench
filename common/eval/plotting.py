@@ -19,8 +19,8 @@ import json
 import re
 from typing import Any, Literal
 
-from engmod.common import constants
-from engmod.common import file_utils
+from common import constants
+from common import file_utils
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy

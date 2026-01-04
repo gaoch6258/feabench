@@ -13,17 +13,34 @@
 # limitations under the License.
 
 """Benchmark constants."""
-from engmod.common import file_utils
+import os
+import file_utils
 
-DATA_DIR = # DATADIR 
+# 获取项目根目录（common 目录的父目录）
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-LIB_DIR = # LIB_DIR for Annotated Library
-PROMPTS_DIR = 
-SYSTEM_ARTIFACT_DIR = # Local filepath that mphclient can see
-WORKING_EXPERIMENT_DIR = # EXP_DIR for outputs
-FINAL_EXPERIMENT_DIR = # EXP_DIR for outputs
+# 数据目录：包含 benchmark 问题的 JSON 文件
+DATA_DIR = os.path.join(_PROJECT_ROOT, 'data', 'benchmark')
 
-LIB_PATH = f'{LIB_DIR}/annotated_snippets_v1.json'
+# 注释库目录：包含 annotated_snippets_v1.json 的目录
+LIB_DIR = os.path.join(_PROJECT_ROOT, 'data', 'library')
+
+# Prompt 模板目录：包含 prompt_v0_nosol.txt 等模板文件
+PROMPTS_DIR = os.path.join(_PROJECT_ROOT, 'common', 'prompts')
+
+# 系统工件目录：mphclient 可以访问的本地文件路径，用于保存生成的代码文件
+SYSTEM_ARTIFACT_DIR = os.path.join(_PROJECT_ROOT, 'artifacts')
+
+# 工作实验目录：实验输出的工作目录
+WORKING_EXPERIMENT_DIR = os.path.join(_PROJECT_ROOT, 'experiments', 'working')
+
+# 最终实验目录：最终实验输出目录
+FINAL_EXPERIMENT_DIR = os.path.join(_PROJECT_ROOT, 'experiments', 'final')
+
+# 物理文档目录：包含 physics_interfaces.json 和 interface_feature_map.json
+PHY_DOC_DIR = os.path.join(_PROJECT_ROOT, 'data', 'docs')
+
+LIB_PATH = os.path.join(LIB_DIR, 'annotated_snippets_v1.json')
 
 BENCHMARK_PROBLEMS = (
     'comsol_82',

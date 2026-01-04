@@ -20,12 +20,12 @@ import json
 import os
 from typing import Any, Optional
 
-from engmod.common import file_utils
-from engmod.common import prompt_generation
-from engmod.common.eval import api_score
-from engmod.common.eval import parsing_lm_utils
-from engmod.common.eval import utils
-from engmod.common.remote_service import mph_comsol_client
+from common import file_utils
+from common import prompt_generation
+from common.eval import api_score
+from common.eval import parsing_lm_utils
+from common.eval import utils
+from common.remote_service import mph_comsol_client
 import ml_collections as mlc
 import numpy as np
 

@@ -1,0 +1,32 @@
+# Core scientific computing
+numpy
+pandas
+scipy
+
+# Machine Learning & AI
+langfun
+ml-collections
+pyglove
+
+# Google Cloud services
+google-cloud-aiplatform
+google-cloud-discoveryengine
+
+# PDF processing
+pypdfium2
+
+# Utilities
+regex
+retrying
+absl-py
+pyyaml
+termcolor
+
+# Remote procedure calls
+rpyc
+
+# COMSOL Multiphysics interface
+MPh
+
+# Plotting
+matplotlib

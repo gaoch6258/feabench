@@ -26,18 +26,18 @@ import warnings
 from absl import logging  # pylint: disable=unused-import
 import numpy as np
 
-from engmod.common import agent_configs
-from engmod.common import constants
-from engmod.common import file_utils
-from engmod.common import llm_client_builder
-from engmod.common import prompt_generation
-from engmod.common import simple_agents
-from engmod.common.agents import corrector_subagent
-from engmod.common.eval import api_score
-from engmod.common.eval import evaluate_nafems
-from engmod.common.eval import parsing_lm_utils
-from engmod.common.eval import utils
-from engmod.common.remote_service import mph_comsol_client
+import agent_configs
+import constants
+import file_utils
+import llm_client_builder
+import prompt_generation
+import simple_agents
+from agents import corrector_subagent
+from eval import api_score
+from eval import evaluate_nafems
+from eval import parsing_lm_utils
+from eval import utils
+from remote_service import mph_comsol_client
 
 
 CORRECTOR_SUBAGENTS = {

@@ -22,11 +22,11 @@ import os
 from absl import app
 from absl import flags
 
-from engmod.common import agent_configs
-from engmod.common import constants
-from engmod.common import file_utils
-from engmod.common import llm_client_builder
-from engmod.common import run_experiment
+import agent_configs
+import constants
+# import file_utils
+import llm_client_builder
+import run_experiment
 
 
 _VERSION = flags.DEFINE_integer(
@@ -63,10 +63,10 @@ def main(unused_argv):
   if _VERSION.value is None:
     raise ValueError('Must specify --version.')
 
-  for prob in constants.BENCHMARK_PROBLEMS:
-    assert file_utils.file_exists(
-        os.path.join(constants.DATA_DIR, f'{prob}.json')
-    )
+  # for prob in constants.BENCHMARK_PROBLEMS:
+  #   assert file_utils.file_exists(
+  #       os.path.join(constants.DATA_DIR, f'{prob}.json')
+  #   )
 
   if _MODEL_TYPE.value == 'openai':
     model_url = llm_client_builder.MODEL_URLS_EXTERNAL['openai_gpt-4o']

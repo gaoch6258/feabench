@@ -18,8 +18,8 @@ from typing import Any, Optional
 import langfun as lf
 import numpy as np
 from retrying import retry
-from engmod import llm_client
-from engmod.common import constants
+import llm_client
+import constants
 
 
 # @retry() # Specify retry decorator here

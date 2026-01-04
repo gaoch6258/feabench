@@ -19,9 +19,9 @@ from typing import Any, Sequence
 
 import numpy as np
 
-from engmod.common.eval import utils
-from engmod.common.remote_service import mph_comsol_client
-from engmod.common.eval import action_eval
+from common.eval import utils
+from common.remote_service import mph_comsol_client
+from common.eval import action_eval
 
 
 EMPTY_TREE = """model

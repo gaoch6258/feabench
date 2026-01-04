@@ -23,8 +23,8 @@ import os
 
 from absl import app
 from absl import flags
-from engmod.common import file_utils
-from engmod.common import llm_client_builder
+import file_utils
+import llm_client_builder
 import pandas as pd
 
 MODEL_TYPE = flags.DEFINE_string(

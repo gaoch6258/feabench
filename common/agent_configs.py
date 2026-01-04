@@ -18,11 +18,12 @@ import datetime
 import os
 from typing import Any, List, Literal, Optional, Sequence
 
-from engmod.common import constants
-from engmod.common import file_utils
-from engmod.common import llm_client_builder
-from engmod.common.remote_service import mph_comsol_client
 import ml_collections as mlc
+
+import constants
+import file_utils
+import llm_client_builder
+from remote_service import mph_comsol_client
 
 
 class GenericAgent(abc.ABC):

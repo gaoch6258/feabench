@@ -20,12 +20,12 @@ import json
 import os
 from typing import Any, Callable, Optional
 
-from engmod.common import agent_configs
-from engmod.common import file_utils
-from engmod.common import prompt_generation
-from engmod.common.agents import tools
-from engmod.common.eval import parsing_lm_utils
-from engmod.common.remote_service import mph_comsol_client
+from common import agent_configs
+from common import file_utils
+from common import prompt_generation
+from common.agents import tools
+from common.eval import parsing_lm_utils
+from common.remote_service import mph_comsol_client
 import langfun as lf
 import ml_collections
 

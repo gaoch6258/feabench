@@ -20,9 +20,9 @@ import warnings
 import numpy as np
 import termcolor
 
-from engmod import file_utils
-from engmod.common.eval import parsing_lm_utils
-from engmod.common.remote_service import mph_comsol_client
+import file_utils
+from common.eval import parsing_lm_utils
+from common.remote_service import mph_comsol_client
 
 
 def pass_code_linewise_to_client(

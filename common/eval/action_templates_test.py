@@ -16,7 +16,7 @@
 import re
 
 from absl.testing import absltest
-from engmod.common.eval import action_templates
+from common.eval import action_templates
 import numpy as np
 
 

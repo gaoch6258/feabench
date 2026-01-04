@@ -19,8 +19,8 @@ import json
 import os
 from typing import Any, Collection, Sequence
 
-from engmod.common import constants
-from engmod.common import file_utils
+from common import constants
+from common import file_utils
 import numpy as np
 import pandas as pd
 

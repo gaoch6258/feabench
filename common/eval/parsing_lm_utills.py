@@ -23,8 +23,8 @@ import warnings
 import numpy as np
 import numpy.typing as npt
 
-from engmod import common_parsing_utils
-from engmod import parse_java_api
+import common_parsing_utils
+import parse_java_api
 
 
 class CodeBlock:

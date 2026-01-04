@@ -18,9 +18,9 @@
 import collections
 import dataclasses
 from typing import Any, Dict, List, Sequence
-from engmod.eval import action_templates
-from engmod.eval import evaluation_utils
-from engmod.eval import constants
+from common.eval import action_templates
+from common.eval import evaluation_utils
+from common.eval import constants
 import numpy as np
 
 

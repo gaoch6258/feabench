@@ -16,7 +16,7 @@
 
 # pylint: disable=trailing-whitespace
 import os
-from engmod.common import constants
+from common import constants
 
 DOC_DIR = constants.PHY_DOC_DIR
 PHY_INTERFACE_PATH = os.path.join(DOC_DIR, 'physics_interfaces.json')
